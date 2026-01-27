@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:30px ;
+}
+.nav{
+    background-color: black;
+    padding: 15px 10px 25px;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+}
+.nav_links{
+    float: right;
+}
+.nav_links a{
+    color: white;
+    display: inline-block;
+    padding-right:10px ;
+    padding-top: 4px;
+    text-decoration: none;
+}
+.header{
+    background-image: linear-gradient(to bottom,#dc817f,#fcc494);
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.header-content{
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-content h1{
+    font-size: 70px;
+    color: white;
+    text-shadow: 7px 7px #df6161;
+}
+.header-content a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius:30px ;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 7px 7px #df6161;
+    font-weight: 700;
+}
+.header-bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.header-bg img{
+    position: absolute;
+}
+.circle-bordered{
+    bottom: -30px;
+    left: 30px;
+    animation: triangle linear 7s infinite;
+    z-index: 20;
+}
+.circle-dashed-border{
+    bottom: -150px;
+    right: -150px;
+    animation: circle-dashed-border linear 10s infinite;
+}
+.circle1{
+    top: -150px;
+    left: -150px;
+    animation: circle1 linear 10s infinite;
+}
+.circle2{
+    top: -180px;
+    right:-180px;
+    animation: circle2 linear 10s infinite;
+}
+.circle3{
+    bottom: -100px;
+    left: -100px;
+    animation: circle3 linear 15s infinite;
+}
+.octagon{
+    bottom:60px;
+    right: 580px;
+    animation: octagon linear 5s infinite;
+}
+.triangle{
+    top: 20%;
+    left: 600px;
+    animation: triangle linear 5s infinite;
+}
+@keyframes triangle{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(210px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes circle2{
+    0%{
+        transform: translate(0px,0px) rotate(0);
+    }
+    50%{
+        transform: translate(-230px,180px) rotate(180deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(360deg);
+    }
+}
+@keyframes circle-dashed-border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes circle1{
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    50%{
+        transform: translate(200px,150px) rotate(180deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(360deg);
+    }
+}
+@keyframes circle3 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(50px,200px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+@keyframes octagon{
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    50%{
+        transform: translate(30px,150px) rotate(180deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(360deg);
+    }
+}
+.about-us{
+    /* background-color: white; */
+    padding-top: 120px;
+    padding-bottom: 160px;
+    text-align: center;
+}
+.what-we-do{
+    background-image: linear-gradient(5deg,#dc817f,#fcc494 70%,white 70%);
+}
+.homework{
+    background-image: linear-gradient(170deg,#dc817f 50%,white 50%);
+    padding-top:40px ;
+    padding-bottom: 100px;
+}
+.homework h2{
+    color: white;
+    text-align: center;
+}
+.hw-left,.hw-center,.hw-right{
+    display: inline-block;
+    width: 30%;
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 20px;
+    height: 500px;
+    margin: 15px;
+    border:#ffc997 solid 4px;
+    text-align: center;
+}
+.hw-left h3,.hw-center h3,.hw-right h3{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: top;
+}
+hr{
+    color:#e06161;
+    border-color: #e06161;
+    border-style: solid;
+    margin: 10px auto;
+    width: 50%;
+}
+.do-right,.do-left{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+.do-right img{
+    width: 100%;
+    margin-left:20px;
+    margin-top: 40px;
+}
+.do-left p{
+    background-color: white;
+    box-shadow:#df6161 7px 7px   ;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 28px;
+}
+.advantages{
+    height: 100vh;
+    position: relative;
+}
+.adv-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.adv-content{
+    position: relative;
+    z-index: 100;
+}
+.adv-card{
+    border: solid #fec896 5px;
+    border-radius: 15px;
+    box-shadow: #df6161 5px 6px;
+    padding: 20px;
+    margin: 40px;
+    width: 80%;
+    background-color: white;
+}
+.adv-circle{
+    position: absolute;
+    right:-130px ;
+    bottom: -130px;
+    transform: scale(0.7);
+}
+.adv-hexagon{
+    position: sticky;
+    top: 100px;
+}
+.adv-card ul{
+    padding-left: 20px;
+    list-style-type: circle;
+}
+.adv-card h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.card-midlle{
+    margin-left: auto;
+}
+.portpholio{
+    padding-bottom:50px ;
+}
+.cell{
+    width: 49%;
+    height: 200px;
+    background-size: cover;
+    background-position:center ;
+    display: inline-block;
+    border-radius: 20px;
+    border: #df6161 4px solid;
+    transition: 0.5s;
+}
+.cell:hover{
+    transform: scale(0.9);
+}
+.cell1{
+    background-image:url(img/portfolio/site1.png) ;
+}
+.cell2{
+    background-image: url(img/portfolio/site2.png);
+}
+.cell3{
+    background-image: url(img/portfolio/site3.png);
+}
+.cell4{
+    background-image: url(img/portfolio/site4.png);
+}
+.homework2{
+    background-image:linear-gradient(#dc7f7e 50%,#fec796);
+    text-align: center;
+}
+.homework2 h2{
+    padding-top:60px ;
+}
+.homework2 p{
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 30px;
+    box-shadow: #e06161 5px 6px;
+}
