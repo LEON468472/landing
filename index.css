@@ -6,7 +6,7 @@
     font-family: "Montserrat", sans-serif;
 }
 .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 .section-title{
@@ -315,4 +315,13 @@ hr{
     border-radius: 20px;
     padding: 15px 30px;
     box-shadow: #e06161 5px 6px;
+}
+@media(max-width:420px){
+    .do-right, .do-left{
+        width:100%;
+    }
+    .hw-center,.hw-left,.hw-right{
+        display: block;
+        width: 100%;
+    }
 }
