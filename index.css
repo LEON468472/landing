@@ -194,7 +194,7 @@
     background-color: white;
     border-radius: 20px;
     height: 500px;
-    margin: 15px;
+    /* margin: 15px; */
     border:#ffc997 solid 4px;
     text-align: center;
 }
@@ -229,7 +229,7 @@ hr{
     line-height: 28px;
 }
 .advantages{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 .adv-bg{
@@ -322,6 +322,9 @@ hr{
     }
     .hw-center,.hw-left,.hw-right{
         display: block;
+        width: 100%;
+    }
+    .do-right img{
         width: 100%;
     }
 }
